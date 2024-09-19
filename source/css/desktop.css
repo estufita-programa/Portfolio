@@ -1,0 +1,49 @@
+@media screen and (min-width:900px) {
+    main{
+        height: 550px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact--icon{
+        gap: 20px;
+    }
+    nav > ul{
+        gap: 100px;
+    }
+    
+    .proyectos, .contacto,.about--me,.lenguajes,.contactos{
+        width: 100%;
+        padding: 40px 60px;
+    }
+    .proyectos--porfolio{
+        gap: 50px;
+        display: flex;
+    }
+    .container--proyectos, .container--about{
+        padding: 55px 60px;
+    }
+    .container--lenguajes{
+        gap: 50px;
+        padding: 40px 60px;
+    }
+    .secciones--lenguajes{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .logo:nth-child(7){
+        grid-column: 3;
+    }
+    .info1{
+        order: 0;
+    }
+    .info2{
+        order: 0;
+        grid-column: 2 / span 2;
+    }
+    .info2 > img{
+        height: 350px;
+    }
+
+    footer{
+        padding: 40px 130px;
+    }
+}
