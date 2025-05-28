@@ -1,0 +1,114 @@
+
+h1{
+    font-size: calc(var(--titulo)/2);
+}
+h2{
+    font-size: calc(var(--titulo2)/2);
+}
+h3{
+    font-size: calc(var(--subtitulo)/2);
+}
+main{
+    gap: 70px;
+    display: grid;
+    padding: 11.8rem 0;
+    align-items: center;
+    grid-template-rows: repeat(3,1fr);
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: var(--btn);
+}
+.saludo{
+    grid-row: 1;
+}
+.about-me > p{
+    width: 300px;
+    text-align: center;
+}
+.saludo > h1, .about-me > p{
+    color: var(--background);
+}
+
+.menu > ul{
+    gap: 3.75rem;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: flex-start;
+}
+.menu > ul > li > a > h1{
+    color: var(--background);
+}
+
+.divider-title{
+    gap: 2rem;
+    height: 90px;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.projects{
+    padding: var(--padding);
+    background: hsla(138, 20%, 38%, 1);
+    background: linear-gradient(90deg, hsla(138, 20%, 38%, 1) 0%, hsla(152, 65%, 53%, 1) 26%, hsla(152, 77%, 56%, 1) 43%, hsla(117, 54%, 72%, 1) 76%, hsla(144, 69%, 63%, 1) 93%);
+}
+    .info-proyecto{
+        flex-direction: column;
+    }
+    .imagen-proyecto, .imagen-proyecto img{
+        width: 375px;
+        height: 469px;
+        max-width: 504.57px;
+        max-height: 631px;
+    }
+
+    .capitalis-group, .hcs-marketing, .lya-yoga{
+        gap: 17px;
+        flex-direction: column;
+    }    
+    .title-boton{
+        width: 100%;
+        align-items: center;
+    }
+    .title{
+        width: 75%;
+    }
+    .mas{
+        width: 15%;
+    }
+        .mas-text{
+            font-size: var(--titulo2);
+        }
+    .pharagraph-capitalis{
+        display: none;
+    }
+    .divider{
+        height: 1px;
+        background-color: var(--font);
+    }
+
+.keywords{
+    background-color: var(--background-b);
+}
+.contact{
+    gap: 60px;
+    padding: 167px 34px 70px;
+    flex-direction: column;
+    background: hsla(38, 24%, 75%, 1);
+
+    background: linear-gradient(360deg, hsla(38, 24%, 75%, 1) 12%, hsla(37, 9%, 63%, 1) 36%, hsla(37, 9%, 63%, 1) 36%, hsla(220, 3%, 36%, 1) 68%, hsla(218, 17%, 23%, 1) 92%);
+}
+    .title-contact, .btn-contact p{
+        color: var(--thirty);
+        text-align: center;
+    }
+    .btn-contact{
+        width: 200px;
+        padding: 11px 34px;
+        border-radius: 35px;
+        border: solid 5px var(--thirty);
+    }
+    .pharagraph-contact p{
+        text-align: center;
+    }

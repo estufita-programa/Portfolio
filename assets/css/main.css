@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fustat:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+:root{
+    --background: #f4f4f4;
+    --background-b: #303743;
+    --secondary: #989BA0;
+    --thirty: #D3DAD5;
+    --font: #141414;
+    --btn: #974A30;
+
+    --titulo: 6rem;
+    --subtitulo: 2rem;
+    --titulo2: 4rem;
+    --body: 1.25rem;
+
+    --max-width: 1440px;
+    --padding: 26px 34px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Figtree", sans-serif;
+}
+p{
+    font-size: var(--body);
+    font-family: "Fustat", sans-serif;
+}
+h1{
+    font-size: var(--titulo);
+}
+h2{
+    font-size: var(--titulo2);
+}
+h3{
+    font-size: var(--subtitulo);
+}
+.black{
+    font-weight: bold;
+}
+body{
+    background-color: var(--background-b);
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
