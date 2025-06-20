@@ -1,0 +1,36 @@
+@media (min-width: 1020px) {
+    h1{
+    font-size: var(--titulo);
+    }
+    h2{
+        font-size: var(--titulo2);
+    }
+    h3{
+        font-size: var(--subtitulo);
+    }
+
+    main{
+        padding: 85px 60px;
+    }
+    .menu{
+    width: 100%;
+    }
+    .menu > ul{
+        gap: 10.75rem;
+    }
+
+    .projects{
+        padding: 5vw 60px;
+        flex-direction: row;
+    }
+    .info-proyecto{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title-contact{
+        width: 845px;
+    }
+}

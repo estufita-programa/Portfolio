@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ESTILOS -->
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/desktop.css">
         <title>Portfolio | Brenda Romero</title>
     </head>
     <body>
@@ -30,18 +33,20 @@
             <h1>PROJECTS</h1>
             <div class="circle"></div>
             <h1>PROJECTS</h1>
+            <div class="circle"></div>
+            <h1>PROJECTS</h1>
         </div>
-        <section class="projects">
+        <section class="projects flex" id="projects">
             <div class="imagen-proyecto">
                 <img src="assets/img/capitalis group.png" alt="">
             </div>
             <div class="info-proyecto">
                 <div class="capitalis-group flex">
-                    <div class="title-boton flex">
+                    <div class="title-boton flex" onclick="activar('capitalis', this)">
                         <div class="title">
                             <h2>CAPITALIS GROUP</h2>
                         </div>
-                        <div class="mas">
+                        <div class="mas" id="mas">
                             <span class="mas-text">+</span>
                         </div>
                     </div>
@@ -51,7 +56,7 @@
                 </div>
                 <div class="divider"></div>
                 <div class="hcs-marketing flex">
-                    <div class="title-boton flex">
+                    <div class="title-boton flex" onclick="activar('hcs', this)">
                         <div class="title">
                             <h2>HCS MARKETING</h2>
                         </div>
@@ -62,7 +67,7 @@
                 </div>
                 <div class="divider"></div>
                 <div class="lya-yoga flex">
-                    <div class="title-boton flex">
+                    <div class="title-boton flex" onclick="activar('lya', this)">
                         <div class="title">
                             <h2>LYA YOGA</h2>
                         </div>
@@ -78,14 +83,16 @@
         </section>
         <section class="contact flex">
             <div class="title-contact"><h1>Construyamos belleza digital con propósito.</h1></div>
-            <div class="btn-contact">
+            <button class="btn-contact">
                 <p>CONTACTAME</p>
-            </div>
+            </button>
             <div class="pharagraph-contact">
-                <p>Interfaces que no solo funcionan, resuenan.
-                Creo en el diseño con intención, el código con alma y los proyectos que dejan huella (aunque no duren para siempre).<br>
+                <p><span>Interfaces que no solo funcionan, resuenan.<br>
+                Creo en el diseño con intención, el código con alma y los proyectos que dejan huella (aunque no duren para siempre).</span><br>
                 👉🏼 ¿Tu idea merece florecer?</p>
             </div>
         </section>
+        <!-- SCRIPT -->
+         <script src="assets/js/animations.js"></script>
     </body>
 </html>

@@ -9,16 +9,15 @@ h3{
     font-size: calc(var(--subtitulo)/2);
 }
 main{
-    gap: 70px;
+    gap: 200px;
     display: grid;
     padding: 11.8rem 0;
     align-items: center;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
-.circle{
-    width: 15px;
-    height: 15px;
-    background-color: var(--btn);
+.saludo-about{
+    gap: 70px;
+    flex-direction: column;
 }
 .saludo{
     grid-row: 1;
@@ -43,41 +42,46 @@ main{
 
 .divider-title{
     gap: 2rem;
-    height: 90px;
     align-items: center;
     background-color: var(--background);
 }
+    .circle{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--btn);
+    }
 
 .projects{
+    flex-direction: column;
     padding: var(--padding);
+    transition: background 0.5s ease-in-out;
     background: hsla(138, 20%, 38%, 1);
     background: linear-gradient(90deg, hsla(138, 20%, 38%, 1) 0%, hsla(152, 65%, 53%, 1) 26%, hsla(152, 77%, 56%, 1) 43%, hsla(117, 54%, 72%, 1) 76%, hsla(144, 69%, 63%, 1) 93%);
 }
-    .info-proyecto{
-        flex-direction: column;
-    }
     .imagen-proyecto, .imagen-proyecto img{
-        width: 375px;
-        height: 469px;
+        width: 100%;
+        height: auto;
         max-width: 504.57px;
-        max-height: 631px;
     }
 
     .capitalis-group, .hcs-marketing, .lya-yoga{
         gap: 17px;
+        width: 100%;
+        padding: 30px 0;
         flex-direction: column;
+        border-bottom: solid 2px;
     }    
     .title-boton{
         width: 100%;
         align-items: center;
     }
     .title{
-        width: 75%;
-    }
-    .mas{
-        width: 15%;
+        width: 100%;
     }
         .mas-text{
+            display: inline-block;
+            transition: transform 0.3s ease;
             font-size: var(--titulo2);
         }
     .pharagraph-capitalis{
@@ -104,9 +108,12 @@ main{
         text-align: center;
     }
     .btn-contact{
-        width: 200px;
+        width: 100%;
+        max-width: 220px;
         padding: 11px 34px;
         border-radius: 35px;
+        color: var(--thirty);
+        background-color: transparent;
         border: solid 5px var(--thirty);
     }
     .pharagraph-contact p{
