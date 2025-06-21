@@ -43,7 +43,20 @@ main{
 .divider-title{
     gap: 2rem;
     align-items: center;
+    overflow: hidden;
     background-color: var(--background);
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.divider-title > h1{
+    position: relative;
+    animation: slide 10s linear infinite;
 }
     .circle{
         width: 25px;
@@ -55,7 +68,6 @@ main{
 .projects{
     flex-direction: column;
     padding: var(--padding);
-    transition: background 0.5s ease-in-out;
     background: hsla(138, 20%, 38%, 1);
     background: linear-gradient(90deg, hsla(138, 20%, 38%, 1) 0%, hsla(152, 65%, 53%, 1) 26%, hsla(152, 77%, 56%, 1) 43%, hsla(117, 54%, 72%, 1) 76%, hsla(144, 69%, 63%, 1) 93%);
 }
@@ -64,7 +76,15 @@ main{
         height: auto;
         max-width: 504.57px;
     }
+    .imagen {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    }
 
+    .imagen.imagen-open {
+    opacity: 1;
+    }
     .capitalis-group, .hcs-marketing, .lya-yoga{
         gap: 17px;
         width: 100%;
@@ -84,9 +104,27 @@ main{
             transition: transform 0.3s ease;
             font-size: var(--titulo2);
         }
-    .pharagraph-capitalis{
-        display: none;
+            .mas-text.rotar {
+                transform: rotate(45deg);
+            }
+
+    .pharagraph{
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease-in-out;
     }
+    .pharagraph a{
+        display: block;
+        color: var(--font);
+        padding-top: .5rem;
+    }
+    .pharagraph.pharagraph-open {
+        display: block;
+        max-height: 500px; /* lo suficiente para que quepa el contenido */
+        opacity: 1;
+    }
+
     .divider{
         height: 1px;
         background-color: var(--font);

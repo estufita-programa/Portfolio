@@ -1,9 +1,6 @@
 var background = document.getElementById('projects');
 
 function activar(proyecto, elemento) {
-  // Reiniciar todos los "+" de los otros botones
-  document.querySelectorAll('.mas-text').forEach(span => span.textContent = '+');
-
   // Cambiar el fondo según el proyecto
   switch(proyecto) {
     case 'capitalis':
@@ -17,7 +14,29 @@ function activar(proyecto, elemento) {
       break;
   }
 
-  // Cambiar el "+" por "×" solo en el que clickeaste
+  document.querySelectorAll('.mas-text').forEach(span => {
+    span.textContent = '+';
+    span.classList.remove('rotar');
+  });
+  document.querySelectorAll('.pharagraph').forEach(p => {
+    p.classList.remove('pharagraph-open');
+  });
+  document.querySelectorAll('.imagen').forEach(img => {
+   img.classList.remove('imagen-open');
+  });
+
+  // Obtener el ícono actual clickeado
   const icono = elemento.querySelector('.mas-text');
-  icono.textContent = '×';
+  icono.classList.add('rotar');
+
+  // Mostrar el que corresponde al proyecto activo
+  const parrafo = document.querySelector(`.pharagraph[data-proyecto="${proyecto}"]`);
+  if (parrafo) {
+    parrafo.classList.add('pharagraph-open');
+  }
+  // Mostrar solo la del proyecto actual
+  const imagen = document.querySelector(`.imagen[data-proyecto="${proyecto}"]`);
+  if (imagen) {
+    imagen.classList.add('imagen-open');
+  }
 }
