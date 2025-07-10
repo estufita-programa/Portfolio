@@ -94,6 +94,7 @@ main{
     }    
     .title-boton{
         width: 100%;
+        cursor: pointer;
         align-items: center;
     }
     .title{
