@@ -71,9 +71,12 @@ main{
     background: hsla(138, 20%, 38%, 1);
     background: linear-gradient(90deg, hsla(138, 20%, 38%, 1) 0%, hsla(152, 65%, 53%, 1) 26%, hsla(152, 77%, 56%, 1) 43%, hsla(117, 54%, 72%, 1) 76%, hsla(144, 69%, 63%, 1) 93%);
 }
+.imagen-proyecto{
+    height: 70vh;
+}
     .imagen-proyecto, .imagen-proyecto img{
         width: 100%;
-        height: 40vh;
+        height: auto;
         max-width: 333px;
     }
     .imagen {
