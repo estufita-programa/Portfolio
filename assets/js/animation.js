@@ -1,4 +1,4 @@
-var background = document.getElementById('projects');
+var background = document.getElementById('proyectos');
 
 function activar(proyecto, elemento) {
   // Cambiar el fondo según el proyecto
